@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+
+.text {
+  
+}
+
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+
+
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+}
+
+ 
+ input[type="text"]:hover {
+   border-color: #999;
+
+ }
+
+ input[type="text"]:focus {
+   border-color: #007bff;
+
+ }
+ 
+
+
+/* task 4  */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 70px;
+  padding-left: 20px; 
+  margin-top: 80px;
+
+}
+
+.login-form label {
+  margin-bottom: 5px;
+}
+
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 350px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form input[type="email"]:hover,
+.login-form input[type="password"]:hover,
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: blue;
+}
+
+
+.login-form button {
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  background-color: #2980b9;
+}
+ /* task 4  */
+
+
+/* task 5 */
+ /* Стилі для контейнера widget */
+ .widget {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+ }
+
+ /* Стилі для тексту */
+ .widget p {
+   margin-bottom: 10px;
+ }
+
+ /* Стилі для кнопки */
+ .widget button {
+   padding: 10px 20px;
+   background-color: #3498db;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+ }
+
+ /* Стилі для ховеру і фокусу кнопки */
+ .widget button:hover,
+ .widget button:focus {
+   background-color: #2980b9;
+ }
+ /* task 5 */
+
+
+/* task 6 */
+ /* Стилі для кнопки Create */
+ [data-create] {
+   padding: 10px 20px;
+   background-color: #3498db;
+   /* Синій колір */
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+ }
+
+ /* Стилі для ховеру і фокусу кнопки Create */
+ [data-create]:hover,
+ [data-create]:focus {
+   background-color: #2980b9;
+   /* Темно-синій колір при ховері і фокусі */
+ }
+
+ /* Стилі для кнопки Destroy */
+ [data-destroy] {
+   padding: 10px 20px;
+   background-color: #f44336;
+   /* Світло-червоний колір */
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+ }
+
+ /* Стилі для ховеру і фокусу кнопки Destroy */
+ [data-destroy]:hover,
+ [data-destroy]:focus {
+   background-color: #d32f2f;
+   /* Темно-червоний колір при ховері і фокусі */
+ }
+ 
+ input[type="number"] {
+   width: calc(100px + 40px);
+   /* Ширина поля відповідає ширині двох кнопок */
+   padding: 10px;
+   margin: 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+ }
+
+ /* Стилі для ховеру і фокусу числового поля */
+ input[type="number"]:hover,
+ input[type="number"]:focus {
+   border-color: blue;
+ }
+ /* task 6 */
