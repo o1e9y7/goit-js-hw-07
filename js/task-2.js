@@ -57,3 +57,5 @@ photos.forEach(photo => {
   photo.style.objectFit = 'cover';
 });
 list.style.listStyleType = 'none';
+
+

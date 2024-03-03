@@ -6,14 +6,13 @@ function getRandomHexColor() {
 
 
 
-// Функція для створення елементів та додавання їх у DOM
 function createBoxes(amount) {
   const boxesContainer = document.querySelector("#boxes");
-  // Очищаємо контейнер перед створенням нових елементів
+ 
   boxesContainer.innerHTML = "";
   
-  const baseSize = 30; // Базовий розмір першого елемента
-  const sizeIncrement = 10; // Інкремент розміру
+  const baseSize = 30; 
+  const sizeIncrement = 10; 
 
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
@@ -25,7 +24,7 @@ function createBoxes(amount) {
   }
 }
 
-// Функція для очищення контейнера від елементів
+
 function destroyBoxes() {
   const boxesContainer = document.querySelector("#boxes");
   boxesContainer.innerHTML = "";
@@ -38,10 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createButton.addEventListener("click", () => {
     const amount = parseInt(input.value);
-    // Перевіряємо, чи введене значення в межах діапазону 1-100
+   
     if (amount >= 1 && amount <= 100) {
       createBoxes(amount);
-      input.value = ""; // Очищаємо значення input
+      input.value = "";
     }
   });
 
